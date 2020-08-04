@@ -1,0 +1,137 @@
+$themePrimary: '[theme:themePrimary, default:#004578]';
+$themeWhite: '[theme:white, default:white]';
+
+.menuButton {
+  text-align: left;
+  vertical-align: top;
+  width: 227px;
+  color: #e1e000;
+  font-size: 22px;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  background-color: #2C363F;
+  padding-top:10px;
+  padding-bottom:20px;
+  height: 40px;
+  
+
+  &:hover {
+    vertical-align: top;
+    padding-top: 10px;
+    background-color: #2C363F;
+    color: #e1e000;
+    font-weight:bold;
+  }
+}
+
+.topPanel {
+  color: $themePrimary;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 23px;
+}
+
+.menuWrap {
+  box-shadow: 0px 5px 25.81px 3.19px rgba(0,0,0,0.2);
+  background-color: $themeWhite;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.categoryItem {
+  margin-left: -50px;
+  font-weight: bolder;
+ text-align:center;
+ color:teal;
+ //background-color: pink;
+  padding: 10px 0;
+  width:200px;
+  font-size: 20px;
+  margin: 0 0 -5 0; 
+ 
+}
+
+.menuItem {
+  font-size: 15px;
+  padding: 9px 0px; 
+  text-align:left; 
+  width:200px;
+ //border-bottom: 1px solid #add8e6;
+  transition: margin-left 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
+  -webkit-transition: margin-left 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
+  -moz-transition: margin-left 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
+  -o-transition: margin-left 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
+  -ms-transition: margin-left 0.3s linear, font-weight 0.2s linear, color 0.3s linear;  
+  &:hover {
+    margin-left: 18px;    
+    a {
+      font-weight: 600;
+      color: $themePrimary;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: #2d303a;
+  }
+}
+
+// SIMPLE GRID - SASS/SCSS
+
+// grid
+
+$width: 96%;
+$gutter: 4%;
+$breakpoint-small: 33.75em; // 540px
+$breakpoint-med: 45em; // 720px
+$breakpoint-large: 60em; // 960px
+
+.grid {
+  width: 90%; //90%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media only screen and (min-width: $breakpoint-small) {
+    width: 95%; //80%;
+  }
+
+  @media only screen and (min-width: $breakpoint-large) {
+    width: 90%; //75%;
+    //max-width: 60rem;
+  }
+}
+
+.row {
+  width: $width;
+}
+
+.col1sm { width:($width / 12) - ($gutter * 11 / 12); }
+.col2sm { width: ($width / 6) - ($gutter * 10 / 12); }
+.col3sm { width: ($width / 4) - ($gutter * 9 / 12); }
+.col4sm { width: ($width / 3) - ($gutter * 8 / 12); }
+.col5sm { width: ($width / (12 / 5)) - ($gutter * 7 / 12); }
+.col6sm { width: ($width / 2) - ($gutter * 6 / 12); }
+.col7sm { width: ($width / (12 / 7)) - ($gutter * 5 / 12); }
+.col8sm { width: ($width / (12 / 8)) - ($gutter * 4 / 12); }
+.col9sm { width: ($width / (12 / 9)) - ($gutter * 3 / 12); }
+.col10sm { width: ($width / (12 / 10)) - ($gutter * 2 / 12); }
+.col11sm { width: ($width / (12 / 11)) - ($gutter * 1 / 12); }
+.col12sm { width: $width; }
+
+@media only screen and (min-width: $breakpoint-med) {
+  .col1 { width:($width / 12) - ($gutter * 11 / 12); }
+  .col2 { width: ($width / 6) - ($gutter * 10 / 12); }
+  .col3 { width: ($width / 4) - ($gutter * 9 / 12); }
+  .col4 { width: ($width / 3) - ($gutter * 8 / 12); }
+  .col5 { width: ($width / (12 / 5)) - ($gutter * 7 / 12); }
+  .col6 { width: ($width / 2) - ($gutter * 6 / 12); }
+  .col7 { width: ($width / (12 / 7)) - ($gutter * 5 / 12); }
+  .col8 { width: ($width / (12 / 8)) - ($gutter * 4 / 12); }
+  .col9 { width: ($width / (12 / 9)) - ($gutter * 3 / 12); }
+  .col10 { width: ($width / (12 / 10)) - ($gutter * 2 / 12); }
+  .col11 { width: ($width / (12 / 11)) - ($gutter * 1 / 12); }
+  .col12 { width: $width; }
+
+  .hiddensm {
+    display: block;
+  }
+}

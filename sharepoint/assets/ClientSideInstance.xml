@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ClientSideComponentInstance
+        Title="QuikLinks"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ComponentId="c4ead072-d101-405f-9674-e9c14b2222c3"
+        Properties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+    </ClientSideComponentInstance>
+</Elements>

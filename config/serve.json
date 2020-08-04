@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://newwavetechnologies.sharepoint.com/SitePages/Announcement.aspx",
+      "customActions": {
+        "c4ead072-d101-405f-9674-e9c14b2222c3": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    },
+    "quikLinks": {
+      "pageUrl": "https://newwavetechnologies.sharepoint.com/SitePages/Announcement.aspx",
+      "customActions": {
+        "c4ead072-d101-405f-9674-e9c14b2222c3": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    }
+  }
+}
